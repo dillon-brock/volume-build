@@ -1,3 +1,14 @@
+let volume = 10;
+
+const controlsSection = document.querySelector('.controls');
+const volumeDisplay = controlsSection.querySelector('span');
+const [downButton, upButton] = controlsSection.querySelectorAll('button');
+
+
+
+function displayVolume() {
+    volumeDisplay.textContent = volume;
+}
 
 // state
 
@@ -13,3 +24,4 @@
 
 
 // page load actions
+displayVolume();
