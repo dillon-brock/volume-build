@@ -17,6 +17,13 @@ downButton.addEventListener('click', () => {
     displayVolume();
 });
 
+upButton.addEventListener('click', () => {
+    if (volume < 20) {
+        volume++;
+    }
+    displayVolume();
+});
+
 
 
 // state
