@@ -11,16 +11,12 @@ function displayVolume() {
 }
 
 downButton.addEventListener('click', () => {
-    if (volume) {
-        volume--;
-    }
+    if (volume) volume--;
     displayVolume();
 });
 
 upButton.addEventListener('click', () => {
-    if (volume < 20) {
-        volume++;
-    }
+    if (volume < 20) volume++;
     displayVolume();
 });
 
