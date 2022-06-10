@@ -1,3 +1,26 @@
+let volume = 10;
+
+const controlsSection = document.querySelector('.controls');
+const volumeDisplay = controlsSection.querySelector('span');
+const [downButton, upButton] = controlsSection.querySelectorAll('button');
+
+
+
+function displayVolume() {
+    volumeDisplay.textContent = volume;
+}
+
+downButton.addEventListener('click', () => {
+    if (volume) volume--;
+    displayVolume();
+});
+
+upButton.addEventListener('click', () => {
+    if (volume < 20) volume++;
+    displayVolume();
+});
+
+
 
 // state
 
@@ -13,3 +36,4 @@
 
 
 // page load actions
+displayVolume();
