@@ -10,6 +10,15 @@ function displayVolume() {
     volumeDisplay.textContent = volume;
 }
 
+downButton.addEventListener('click', () => {
+    if (volume) {
+        volume--;
+    }
+    displayVolume();
+});
+
+
+
 // state
 
 
